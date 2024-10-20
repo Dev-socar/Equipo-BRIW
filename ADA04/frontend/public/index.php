@@ -37,7 +37,7 @@
         </form>
     </section>
 
-    <script src="../src/js/app.js" type="module"></script>
+    <script src="./js/app.js" type="module"></script>
 </body>
 
 </html>

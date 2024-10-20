@@ -1,6 +1,6 @@
 import { inputFile } from "./selectores.js";
 
-const handleForm = (e) => {
+const handleFormFile = (e) => {
   e.preventDefault();
   const files = inputFile.files;
 
@@ -16,13 +16,13 @@ const uploadFiles = async (files) => {
   // Crear una instancia de FormData para enviar los archivos
   const formData = new FormData();
 
-  // Agregar los archivos a formData
+  // Agregar los archivos a formData con un nombre dinámico
   for (let i = 0; i < files.length; i++) {
-    formData.append("archivo", files[i]);
+    formData.append(`archivo_${i}`, files[i]);
   }
 
   try {
-    const url = "http://localhost:4000/API/upload.php";
+    const url = "http://localhost:4000/API/uploadFile.php";
     const response = await fetch(url, {
       method: "POST",
       body: formData,
@@ -32,12 +32,12 @@ const uploadFiles = async (files) => {
     if (!response.ok) {
       throw new Error("Error en la subida: " + response.statusText);
     }
-
     const data = await response.json();
     console.log(data);
+    inputFile.value = "";
   } catch (error) {
-    console.error(error.message); // Mostrar el error
+    return { success: false, message: error.message }; // Devolver un objeto JSON con el error
   }
 };
 
-export { handleForm };
+export { handleFormFile };
