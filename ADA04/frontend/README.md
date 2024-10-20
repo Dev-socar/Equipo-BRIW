@@ -25,9 +25,10 @@ Las Tecnologias usadas son:
 │   ├── app.css
 │   ├── js
 │       ├── app.js
+│       ├── search.js
 │       ├── selectores.js
 │       └── uploadFile.js
-│       └── uploadFile.js
+│       
 │ 
 ├── package.json
 ├── README.md
