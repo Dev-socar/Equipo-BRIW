@@ -1,0 +1,1 @@
+El UV mapping o mapeo UV consiste en asignar un par de coordenadas 2D a cada vértice de la malla poligonal. Las UV son esenciales porque proporcionan la conexión entre la superficie de la malla poligonal y la forma en la que el mapa de textura se aplicará sobre ella.

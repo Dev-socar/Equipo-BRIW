@@ -33,8 +33,9 @@ const uploadFiles = async (files) => {
       throw new Error("Error en la subida: " + response.statusText);
     }
     const data = await response.json();
-    console.log(data);
+    const { message } = data;
     inputFile.value = "";
+    alert(message);
   } catch (error) {
     return { success: false, message: error.message }; // Devolver un objeto JSON con el error
   }

@@ -1,0 +1,3 @@
+Puede ser Mapeo de texturas (UV mapping)
+Técnicas de compresión de texturas (Mipmaps)
+Pero realmente no se si esto vaya a funcionar jeje

@@ -35,6 +35,12 @@
             <button type="submit"
                 class="bg-gray-900 block w-32 p-2 rounded text-white hover:bg-gray-700">Buscar</button>
         </form>
+
+        <main class="mt-20">
+            <div class="flex gap-y-3 shadow p-3 rounded max-w-lg mx-auto mt-5 space-y-3" id="results">
+
+            </div>
+        </main>
     </section>
 
     <script src="./js/app.js" type="module"></script>
