@@ -4,7 +4,7 @@
 <head>
 	<?php require("views/head.view.php"); ?>
 	
-	<title>ADA 03 Lenguajes de Consulta</title>
+	<title>ADA 06  Búsqueda empresarial</title>
 	<meta property="og:title" content="ADA 03 Lenguajes de Consulta" />
 	<meta property="og:description" content="" />
 </head>
