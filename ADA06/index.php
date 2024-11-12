@@ -9,7 +9,7 @@ $dbname = "ada_06";
 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$textQuery = "universo";
+$textQuery = "";
 if ( isset($_GET['query']) ) {
     $textQuery = $_GET['query'];    
 }
@@ -25,7 +25,7 @@ $stmt->execute();
 $resultados = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
-if(1){
+if(0){
     header('Content-type: application/json');
     echo json_encode($resultados, true);
     die();
