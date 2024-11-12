@@ -1,3 +1,5 @@
+CREATE DATABASE ada_06;
+
 CREATE TABLE documentos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     ruta_del_documento VARCHAR(255),
